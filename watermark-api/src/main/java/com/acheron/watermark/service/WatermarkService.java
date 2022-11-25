@@ -1,4 +1,4 @@
-package com.watermark.service;
+package com.acheron.watermark.service;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -12,11 +12,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import com.watermark.exception.MessageNotFoundException;
-import com.watermark.exception.TemplateNotFoundException;
-import com.watermark.model.ImageResponse;
-import com.watermark.model.ImageTemplate;
-import com.watermark.repository.IWatermarkRepository;
+import com.acheron.watermark.exception.MessageNotFoundException;
+import com.acheron.watermark.exception.TemplateNotFoundException;
+import com.acheron.watermark.model.ImageResponse;
+import com.acheron.watermark.model.ImageTemplate;
+import com.acheron.watermark.repository.IWatermarkRepository;
 
  
 /**

@@ -1,8 +1,8 @@
-package com.watermark.repository;
+package com.acheron.watermark.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.watermark.model.ImageTemplate;
+import com.acheron.watermark.model.ImageTemplate;
 
 /**
  * @author MohammedRinishA

@@ -1,4 +1,4 @@
-package com.watermark.controller;
+package com.acheron.watermark.controller;
 
 
 import java.io.BufferedInputStream;
@@ -26,12 +26,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.watermark.exception.MessageNotFoundException;
-import com.watermark.exception.TemplateNotFoundException;
-import com.watermark.model.ImageResponse;
-import com.watermark.model.ImageTemplate;
-import com.watermark.model.InputTemplate;
-import com.watermark.service.IWatermarkService;
+import com.acheron.watermark.exception.MessageNotFoundException;
+import com.acheron.watermark.exception.TemplateNotFoundException;
+import com.acheron.watermark.model.ImageResponse;
+import com.acheron.watermark.model.ImageTemplate;
+import com.acheron.watermark.model.InputTemplate;
+import com.acheron.watermark.service.IWatermarkService;
 
 
 

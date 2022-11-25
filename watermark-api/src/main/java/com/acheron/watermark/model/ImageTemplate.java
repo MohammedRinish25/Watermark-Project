@@ -1,4 +1,4 @@
-package com.watermark.model;
+package com.acheron.watermark.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

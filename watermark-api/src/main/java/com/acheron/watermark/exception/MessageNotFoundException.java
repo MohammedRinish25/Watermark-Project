@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.watermark.exception;
+package com.acheron.watermark.exception;
 
 /**
  * @author MohammedRinishA
