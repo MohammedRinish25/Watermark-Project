@@ -14,7 +14,6 @@ import com.watermark.service.IWatermarkService;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-
 public class WatermarkApplication implements CommandLineRunner{
 
 	public static void main(String[] args) {
@@ -33,7 +32,7 @@ public class WatermarkApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		//watermarkService.addTemplate(new ImageTemplate("box","C:\\Users\\MohammedRinishA\\Pictures\\ImageMagick\\box.jpg"));
+		
 		
 		
 	}

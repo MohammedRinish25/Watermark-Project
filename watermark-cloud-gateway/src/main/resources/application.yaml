@@ -5,7 +5,7 @@ spring:
     name: GATEWAY
     
   config: 
-     import: configserver:http://localhost:8888
+     import: configserver:http://${confighost}:${configport}
   
   
           

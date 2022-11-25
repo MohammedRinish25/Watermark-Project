@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.FileCopyUtils;
@@ -25,7 +26,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.watermark.exception.MessageNotFoundException;
 import com.watermark.exception.TemplateNotFoundException;
+import com.watermark.model.ImageResponse;
 import com.watermark.model.ImageTemplate;
 import com.watermark.model.InputTemplate;
 import com.watermark.service.IWatermarkService;
@@ -61,7 +64,7 @@ public class WaterMarkController {
 	 */
 	@GetMapping("/image")
 	public List<ImageTemplate> getImageTemplateList() {
-		 logger.info("Getting all the templates list");
+		logger.info("Getting all the templates list");
 		return watermarkService.getAll();
 	
 	}
@@ -74,23 +77,26 @@ public class WaterMarkController {
 	 * @throws IOException 
 	 * @throws TemplateNotFoundException 
 	 */
-	@PostMapping("/image") 
-	  public ResponseEntity<String> process(@RequestBody InputTemplate inputTemplate) throws TemplateNotFoundException, IOException {
+	  @PostMapping("/image") 
+	  public ResponseEntity<ImageResponse> process(@RequestBody InputTemplate inputTemplate) throws TemplateNotFoundException, IOException,MessageNotFoundException {
 		 
 		ImageTemplate imageTemplate=  watermarkService.findByName(inputTemplate.getImageName());
 		logger.info("getting image in the image template");
-		String process=  watermarkService.magick(imageTemplate,inputTemplate.getMessage());
+		ImageResponse response=  watermarkService.magick(imageTemplate,inputTemplate.getMessage());
 		logger.info("getting the image Template and message ");
+		
 		HttpHeaders header=new HttpHeaders();
 		header.add("desc", "getting image name and message");
-	    return ResponseEntity.ok().headers(header).body(process);
+	    return ResponseEntity.ok().headers(header).body(response);
 	  
 	  }
 	
 	
 	
-	
-	
+	@Value("${path.values}")
+	public String destinationPath ;
+	 
+	 
 
 
 	/**
@@ -99,11 +105,13 @@ public class WaterMarkController {
 	 * @param fileName pass the file name
 	 * @throws IOException throws the IO exception
 	 */
+	 
 	@GetMapping("/file/{fileName:.+}")
 	public void downloadResource(HttpServletRequest request, HttpServletResponse response,
-	@PathVariable("fileName") String fileName) throws IOException {
-
-	     File file = new File("C:/Users/MohammedRinishA/Pictures/Downloads/" + fileName+"_converted.jpg");
+	@PathVariable("fileName") String fileName) throws IOException  {
+	       	
+	     File file = new File( destinationPath + fileName+".jpg");
+	    
 		  if (file.exists()) {
           String mimeType = URLConnection.guessContentTypeFromName(file.getName());
 		  if (mimeType == null) {

@@ -3,7 +3,9 @@ package com.watermark.service;
 import java.io.IOException;
 import java.util.List;
 
+import com.watermark.exception.MessageNotFoundException;
 import com.watermark.exception.TemplateNotFoundException;
+import com.watermark.model.ImageResponse;
 import com.watermark.model.ImageTemplate;
 
 /**
@@ -33,7 +35,7 @@ public interface IWatermarkService {
      * @throws TemplateNotFoundException when the template ie the image not found
      * @throws IOException when the file itself not present in the location
      */
-    String magick(ImageTemplate imageTemplate,String message) throws TemplateNotFoundException, IOException;
+   ImageResponse magick(ImageTemplate imageTemplate,String message) throws  IOException,MessageNotFoundException;
 
 	/**
 	 * @param imageTemplate using this we can add the templates

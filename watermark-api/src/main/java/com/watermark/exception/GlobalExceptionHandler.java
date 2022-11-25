@@ -123,10 +123,10 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler{
 	public ResponseEntity<Object>handleTemplateNotFound(TemplateNotFoundException e){
 		String message=e.getMessage();
 		String error="Template Not Found Exception";
-		ApiErrors errors=new ApiErrors(LocalDateTime.now(),message,HttpStatus.FORBIDDEN,HttpStatus.FORBIDDEN.value(),error);
+		ApiErrors errors=new ApiErrors(LocalDateTime.now(),message,HttpStatus.INTERNAL_SERVER_ERROR,HttpStatus.INTERNAL_SERVER_ERROR.value(),error);
 		HttpHeaders headers=new HttpHeaders();
 		headers.add("info",message);
-		return ResponseEntity.status(HttpStatus.FORBIDDEN).headers(headers).body(errors);
+		return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).headers(headers).body(errors);
  
 	}
 	
@@ -138,28 +138,12 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler{
 	public ResponseEntity<Object>handleMessageNotFound(MessageNotFoundException e){
 		String message=e.getMessage();
 		String error="Message Not Found Exception";
-		ApiErrors errors=new ApiErrors(LocalDateTime.now(),message,HttpStatus.FORBIDDEN,HttpStatus.FORBIDDEN.value(),error);
+		ApiErrors errors=new ApiErrors(LocalDateTime.now(),message,HttpStatus.INTERNAL_SERVER_ERROR,HttpStatus.INTERNAL_SERVER_ERROR.value(),error);
 		HttpHeaders headers=new HttpHeaders();
 		headers.add("info",message);
-		return ResponseEntity.status(HttpStatus.FORBIDDEN).headers(headers).body(errors);
+		return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).headers(headers).body(errors);
  
 	}
-	
-	/**This method returns an IOException
-	 * @param e IOException to the method
-	 * @return an ResponseEntity of Object type with status, headers and errors
-	 */
-	@ExceptionHandler(IOException.class)
-	public ResponseEntity<Object>handleIoException(IOException e){
-		String message=e.getMessage();
-		String error="file not found error";
-		ApiErrors errors=new ApiErrors(LocalDateTime.now(),message,HttpStatus.FORBIDDEN,HttpStatus.FORBIDDEN.value(),error);
-		HttpHeaders headers=new HttpHeaders();
-		headers.add("info",message);
-		return ResponseEntity.status(HttpStatus.FORBIDDEN).headers(headers).body(errors);
- 
-	}
-	
 	
 
 }

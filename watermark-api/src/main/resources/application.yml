@@ -2,7 +2,7 @@
     
 spring:
   config:
-    import: configserver:http://localhost:8888
+    import: configserver:http://${host}:${port}
     
   application:
     name: WATERMARK-SERVICE

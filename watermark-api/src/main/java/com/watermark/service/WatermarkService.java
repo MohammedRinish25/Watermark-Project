@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 
 import com.watermark.exception.MessageNotFoundException;
 import com.watermark.exception.TemplateNotFoundException;
+import com.watermark.model.ImageResponse;
 import com.watermark.model.ImageTemplate;
 import com.watermark.repository.IWatermarkRepository;
 
@@ -40,10 +41,16 @@ public class WatermarkService implements IWatermarkService {
 	}
 
     /**
-     * this variable stores the destination once the image is being watermaked
+     * this variable stores the destination once the image is being water marked
      */
     @Value("${path.values}")
-	public String destinationPath ;
+	private String destinationPath ;
+    
+    
+   @Value("${command}")
+   private String command;
+    
+   
 
 	
 	@Override
@@ -63,32 +70,29 @@ public class WatermarkService implements IWatermarkService {
 	 * @throws IOException 
 	 */
 	@Override
-	public String magick(ImageTemplate imageTemplate, String message) throws IOException {
+	public ImageResponse magick(ImageTemplate imageTemplate, String message) throws IOException ,MessageNotFoundException{
 
 		String inputName = imageTemplate.getImageName();
 		String inputPath = imageTemplate.getPath();
 
+		ImageResponse imageResponse=new ImageResponse(inputName);
+		
+		
 		if(message.isEmpty()) {
 			logger.warn("Exception occurring - no message found");
-			throw new MessageNotFoundException();
+			throw new MessageNotFoundException("No Messages found");
 		}
 		else {
 			
-
-				int index = inputPath.lastIndexOf('\\');
-				String location = inputPath.substring(0, index);
 				logger.info("Getting the path");
 				Process process = null;
 				String extension = inputPath.substring(inputPath.lastIndexOf("."), inputPath.length());
 				logger.info("getting the exact location");
 				
 				try {
-
-					process = Runtime.getRuntime()
-							 .exec("cmd /c magick convert" + inputPath
-									+ " -font Arial -pointsize 35 -draw  \"gravity center fill white text 5,-35 '"
-									+ message + "' \" " + inputName + "_converted" + extension, null, new File(destinationPath));
 					
+					process = Runtime.getRuntime().exec(
+							"cmd /c magick convert"+inputPath+command+message+" " +inputName+extension, null, new File(destinationPath));
 				
 					StringBuilder output = new StringBuilder();
 
@@ -99,8 +103,8 @@ public class WatermarkService implements IWatermarkService {
 						output.append(line + "\n");
 					}
 
-					int exitVal = process.waitFor();
-					if (exitVal == 0) {
+					int exitValue = process.waitFor();
+					if (exitValue == 0) {
 						logger.info("successfully done the pocess");
 
 					}
@@ -113,7 +117,7 @@ public class WatermarkService implements IWatermarkService {
 					process.destroy();
 				}
 		}		
-		        return destinationPath;
+		        return imageResponse;
 		
 	}
 
@@ -124,12 +128,13 @@ public class WatermarkService implements IWatermarkService {
  * @param imageName the image name is taken as the parameter passed it to check whether the image is present or not
  * @return imageTemplate details,if imageTemplate is null throws a exception
  */
-@Override
-	public ImageTemplate findByName(String imageName) {
+    @Override
+	public ImageTemplate findByName(String imageName) throws TemplateNotFoundException{
 	ImageTemplate imageTemplate = waterMarkRepository.findByImageName(imageName);
+	
 		if (imageTemplate == null) {
 			logger.warn("Exception occurring - no image template found");
-			throw new TemplateNotFoundException();
+			throw new TemplateNotFoundException("No templates found");
 		}
 		return imageTemplate;
 	}

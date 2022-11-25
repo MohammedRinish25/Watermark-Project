@@ -1,0 +1,1177 @@
+2022-11-21 18:43:15,471 INFO org.springframework.boot.StartupInfoLogger [main] Starting WatermarkApplication using Java 17.0.4.1 on Rinish with PID 19412 (C:\Users\MohammedRinishA\git\Watermark-Project\watermark-api\target\classes started by MohammedRinishA in C:\Users\MohammedRinishA\git\Watermark-Project\watermark-api)
+2022-11-21 18:43:15,475 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.13, Spring v5.3.23
+2022-11-21 18:43:15,476 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-11-21 18:43:15,515 INFO org.springframework.boot.logging.DeferredLog [main] Fetching config from server at : http://localhost:8888
+2022-11-21 18:43:15,516 INFO org.springframework.boot.logging.DeferredLog [main] Located environment: name=WATERMARK-SERVICE, profiles=[default], label=null, version=1f135b3da0c0cdf18e4834605325a14b74e3c4f3, state=null
+2022-11-21 18:43:16,112 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-21 18:43:16,301 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 176 ms. Found 1 JPA repository interfaces.
+2022-11-21 18:43:16,623 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=e40180e5-53f2-3a05-a605-93445059cbc9
+2022-11-21 18:43:17,018 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8083 (http)
+2022-11-21 18:43:17,030 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8083"]
+2022-11-21 18:43:17,030 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-11-21 18:43:17,030 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-21 18:43:17,235 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-11-21 18:43:17,236 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1718 ms
+2022-11-21 18:43:17,448 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-21 18:43:17,540 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-21 18:43:18,004 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-21 18:43:18,129 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-11-21 18:43:18,628 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-11-21 18:43:18,670 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-11-21 18:43:19,478 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-21 18:43:19,489 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-21 18:43:19,905 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-21 18:43:20,671 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2022-11-21 18:43:21,133 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-21 18:43:21,200 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2022-11-21 18:43:21,238 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2022-11-21 18:43:21,243 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2022-11-21 18:43:21,267 INFO com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2022-11-21 18:43:21,268 INFO com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2022-11-21 18:43:21,268 INFO com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2022-11-21 18:43:21,268 INFO com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2022-11-21 18:43:21,268 INFO com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2022-11-21 18:43:21,269 INFO com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2022-11-21 18:43:21,269 INFO com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2022-11-21 18:43:21,494 INFO com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2022-11-21 18:43:21,497 INFO com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2022-11-21 18:43:21,500 INFO com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-21 18:43:21,507 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1669036401506 with initial instances count: 1
+2022-11-21 18:43:21,509 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application WATERMARK-SERVICE with eureka with status UP
+2022-11-21 18:43:21,510 INFO com.netflix.discovery.DiscoveryClient$3 [main] Saw local status change event StatusChangeEvent [timestamp=1669036401510, current=UP, previous=STARTING]
+2022-11-21 18:43:21,513 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083: registering service...
+2022-11-21 18:43:21,513 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8083"]
+2022-11-21 18:43:21,545 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8083 (http) with context path ''
+2022-11-21 18:43:21,545 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [main] Updating port to 8083
+2022-11-21 18:43:21,558 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - registration status: 204
+2022-11-21 18:43:21,659 INFO org.springframework.boot.StartupInfoLogger [main] Started WatermarkApplication in 11.224 seconds (JVM running for 12.063)
+2022-11-21 18:44:26,651 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8083-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-21 18:44:26,652 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8083-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-11-21 18:44:26,655 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8083-exec-1] Completed initialization in 2 ms
+2022-11-21 18:44:27,083 INFO com.watermark.controller.WaterMarkController [http-nio-8083-exec-1] getting image in the image template
+2022-11-21 18:44:27,083 INFO com.watermark.service.WatermarkService [http-nio-8083-exec-1] Getting the path
+2022-11-21 18:44:27,084 INFO com.watermark.service.WatermarkService [http-nio-8083-exec-1] getting the exact location
+2022-11-21 18:44:27,525 INFO com.watermark.service.WatermarkService [http-nio-8083-exec-1] successfully done the pocess
+2022-11-21 18:44:27,531 INFO com.watermark.controller.WaterMarkController [http-nio-8083-exec-1] getting the image Template and message 
+2022-11-21 18:47:21,609 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [DiscoveryClient-HeartbeatExecutor-0] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on PUT request for "http://localhost:8761/eureka/apps/WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8761/eureka/apps/WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 19 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 32 more
+
+2022-11-21 18:47:21,609 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [DiscoveryClient-HeartbeatExecutor-0] Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-11-21 18:47:21,621 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [DiscoveryClient-HeartbeatExecutor-0] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on PUT request for "http://localhost:8761/eureka/apps/WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on PUT request for "http://localhost:8761/eureka/apps/WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 20 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 33 more
+
+2022-11-21 18:47:21,621 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [DiscoveryClient-HeartbeatExecutor-0] Request execution failed with message: I/O error on PUT request for "http://localhost:8761/eureka/apps/WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-11-21 18:47:21,623 ERROR com.netflix.discovery.DiscoveryClient [DiscoveryClient-HeartbeatExecutor-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-11-21 18:47:21,625 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [DiscoveryClient-CacheRefreshExecutor-0] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getDelta(RestTemplateEurekaHttpClient.java:155)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 35 more
+
+2022-11-21 18:47:21,626 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [DiscoveryClient-CacheRefreshExecutor-0] Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-11-21 18:47:21,641 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [DiscoveryClient-CacheRefreshExecutor-0] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getDelta(RestTemplateEurekaHttpClient.java:155)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 23 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 36 more
+
+2022-11-21 18:47:21,641 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [DiscoveryClient-CacheRefreshExecutor-0] Request execution failed with message: I/O error on GET request for "http://localhost:8761/eureka/apps/delta": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-11-21 18:47:21,642 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
+	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1135)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1016)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2022-11-21 18:47:40,396 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(11)-127.0.0.1] Application shutdown requested.
+2022-11-21 18:47:40,399 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [RMI TCP Connection(11)-127.0.0.1] Unregistering application WATERMARK-SERVICE with eureka with status DOWN
+2022-11-21 18:47:40,401 INFO com.netflix.discovery.DiscoveryClient$3 [RMI TCP Connection(11)-127.0.0.1] Saw local status change event StatusChangeEvent [timestamp=1669036660401, current=DOWN, previous=UP]
+2022-11-21 18:47:40,401 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083: registering service...
+2022-11-21 18:47:40,430 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - registration status: 204
+2022-11-21 18:47:40,431 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(11)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8083"]
+2022-11-21 18:47:40,431 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(11)-127.0.0.1] Stopping service [Tomcat]
+2022-11-21 18:47:40,433 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(11)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-21 18:47:40,437 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(11)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8083"]
+2022-11-21 18:47:40,439 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(11)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8083"]
+2022-11-21 18:47:40,442 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(11)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-21 18:47:40,444 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(11)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-11-21 18:47:40,449 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(11)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-11-21 18:47:40,450 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(11)-127.0.0.1] Shutting down DiscoveryClient ...
+2022-11-21 18:47:43,454 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(11)-127.0.0.1] Unregistering ...
+2022-11-21 18:47:43,462 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(11)-127.0.0.1] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - deregister  status: 200
+2022-11-21 18:47:43,469 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(11)-127.0.0.1] Completed shut down of DiscoveryClient
+2022-11-21 18:47:50,220 INFO org.springframework.boot.StartupInfoLogger [main] Starting WatermarkApplication using Java 17.0.4.1 on Rinish with PID 20028 (C:\Users\MohammedRinishA\git\Watermark-Project\watermark-api\target\classes started by MohammedRinishA in C:\Users\MohammedRinishA\git\Watermark-Project\watermark-api)
+2022-11-21 18:47:50,224 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.13, Spring v5.3.23
+2022-11-21 18:47:50,225 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-11-21 18:47:50,265 INFO org.springframework.boot.logging.DeferredLog [main] Fetching config from server at : http://localhost:8888
+2022-11-21 18:47:50,266 INFO org.springframework.boot.logging.DeferredLog [main] Located environment: name=WATERMARK-SERVICE, profiles=[default], label=null, version=1ac209d1bfa81ffe973b504f256d7a95d3fa0204, state=null
+2022-11-21 18:47:50,845 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-21 18:47:51,011 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 158 ms. Found 1 JPA repository interfaces.
+2022-11-21 18:47:51,330 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=e40180e5-53f2-3a05-a605-93445059cbc9
+2022-11-21 18:47:51,688 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8083 (http)
+2022-11-21 18:47:51,705 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8083"]
+2022-11-21 18:47:51,706 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-11-21 18:47:51,707 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-21 18:47:51,952 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-11-21 18:47:51,953 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1685 ms
+2022-11-21 18:47:52,120 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-21 18:47:52,161 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-21 18:47:52,307 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-21 18:47:52,403 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-11-21 18:47:52,727 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-11-21 18:47:52,742 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-11-21 18:47:53,323 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-21 18:47:53,331 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-21 18:47:53,624 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-21 18:47:54,166 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2022-11-21 18:47:54,474 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-21 18:47:54,533 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2022-11-21 18:47:54,570 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2022-11-21 18:47:54,574 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2022-11-21 18:47:54,594 INFO com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2022-11-21 18:47:54,594 INFO com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2022-11-21 18:47:54,594 INFO com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2022-11-21 18:47:54,595 INFO com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2022-11-21 18:47:54,595 INFO com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2022-11-21 18:47:54,596 INFO com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2022-11-21 18:47:54,596 INFO com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2022-11-21 18:47:54,860 INFO com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2022-11-21 18:47:54,863 INFO com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2022-11-21 18:47:54,868 INFO com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-21 18:47:54,874 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1669036674873 with initial instances count: 0
+2022-11-21 18:47:54,876 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application WATERMARK-SERVICE with eureka with status UP
+2022-11-21 18:47:54,878 INFO com.netflix.discovery.DiscoveryClient$3 [main] Saw local status change event StatusChangeEvent [timestamp=1669036674878, current=UP, previous=STARTING]
+2022-11-21 18:47:54,880 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083: registering service...
+2022-11-21 18:47:54,880 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8083"]
+2022-11-21 18:47:54,913 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8083 (http) with context path ''
+2022-11-21 18:47:54,913 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [main] Updating port to 8083
+2022-11-21 18:47:54,927 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - registration status: 204
+2022-11-21 18:47:55,027 INFO org.springframework.boot.StartupInfoLogger [main] Started WatermarkApplication in 9.291 seconds (JVM running for 10.079)
+2022-11-21 18:48:17,032 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8083-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-21 18:48:17,033 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8083-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-11-21 18:48:17,034 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8083-exec-1] Completed initialization in 1 ms
+2022-11-21 18:48:17,182 INFO com.watermark.controller.WaterMarkController [http-nio-8083-exec-1] getting image in the image template
+2022-11-21 18:48:17,183 INFO com.watermark.service.WatermarkService [http-nio-8083-exec-1] Getting the path
+2022-11-21 18:48:17,183 INFO com.watermark.service.WatermarkService [http-nio-8083-exec-1] getting the exact location
+2022-11-21 18:48:17,405 INFO com.watermark.service.WatermarkService [http-nio-8083-exec-1] successfully done the pocess
+2022-11-21 18:48:17,409 INFO com.watermark.controller.WaterMarkController [http-nio-8083-exec-1] getting the image Template and message 
+2022-11-21 18:48:24,869 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Disable delta property : false
+2022-11-21 18:48:24,870 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Single vip registry refresh property : null
+2022-11-21 18:48:24,870 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Force full registry fetch : false
+2022-11-21 18:48:24,871 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Application is null : false
+2022-11-21 18:48:24,871 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Registered Applications size is zero : true
+2022-11-21 18:48:24,871 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Application version is -1: false
+2022-11-21 18:48:24,872 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] Getting all instance registry info from the eureka server
+2022-11-21 18:48:24,891 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-CacheRefreshExecutor-0] The response status is 200
+2022-11-21 18:52:54,601 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 18:53:25,048 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-HeartbeatExecutor-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - Re-registering apps/WATERMARK-SERVICE
+2022-11-21 18:53:25,050 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-HeartbeatExecutor-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083: registering service...
+2022-11-21 18:53:25,063 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-HeartbeatExecutor-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - registration status: 204
+2022-11-21 18:53:27,892 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(14)-127.0.0.1] Application shutdown requested.
+2022-11-21 18:53:27,895 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [RMI TCP Connection(14)-127.0.0.1] Unregistering application WATERMARK-SERVICE with eureka with status DOWN
+2022-11-21 18:53:27,896 INFO com.netflix.discovery.DiscoveryClient$3 [RMI TCP Connection(14)-127.0.0.1] Saw local status change event StatusChangeEvent [timestamp=1669037007896, current=DOWN, previous=UP]
+2022-11-21 18:53:27,898 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083: registering service...
+2022-11-21 18:53:27,907 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - registration status: 204
+2022-11-21 18:53:27,918 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(14)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8083"]
+2022-11-21 18:53:27,918 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(14)-127.0.0.1] Stopping service [Tomcat]
+2022-11-21 18:53:27,920 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(14)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-21 18:53:27,923 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(14)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8083"]
+2022-11-21 18:53:27,925 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(14)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8083"]
+2022-11-21 18:53:27,929 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(14)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-21 18:53:27,930 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(14)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-11-21 18:53:27,936 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(14)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-11-21 18:53:27,937 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(14)-127.0.0.1] Shutting down DiscoveryClient ...
+2022-11-21 18:53:30,951 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(14)-127.0.0.1] Unregistering ...
+2022-11-21 18:53:30,964 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(14)-127.0.0.1] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - deregister  status: 200
+2022-11-21 18:53:30,969 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(14)-127.0.0.1] Completed shut down of DiscoveryClient
+2022-11-21 18:53:37,574 INFO org.springframework.boot.StartupInfoLogger [main] Starting WatermarkApplication using Java 17.0.4.1 on Rinish with PID 13092 (C:\Users\MohammedRinishA\git\Watermark-Project\watermark-api\target\classes started by MohammedRinishA in C:\Users\MohammedRinishA\git\Watermark-Project\watermark-api)
+2022-11-21 18:53:37,578 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.13, Spring v5.3.23
+2022-11-21 18:53:37,578 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-11-21 18:53:37,627 INFO org.springframework.boot.logging.DeferredLog [main] Fetching config from server at : http://localhost:8888
+2022-11-21 18:53:37,627 INFO org.springframework.boot.logging.DeferredLog [main] Located environment: name=WATERMARK-SERVICE, profiles=[default], label=null, version=299af906bb3778b98232ddb88fb845a07982ebb5, state=null
+2022-11-21 18:53:38,212 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-21 18:53:38,392 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 162 ms. Found 1 JPA repository interfaces.
+2022-11-21 18:53:38,627 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=e40180e5-53f2-3a05-a605-93445059cbc9
+2022-11-21 18:53:38,978 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8083 (http)
+2022-11-21 18:53:38,987 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8083"]
+2022-11-21 18:53:38,988 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-11-21 18:53:38,988 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-21 18:53:39,148 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-11-21 18:53:39,149 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1520 ms
+2022-11-21 18:53:39,306 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-21 18:53:39,350 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-21 18:53:39,486 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-21 18:53:39,593 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-11-21 18:53:40,071 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-11-21 18:53:40,107 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-11-21 18:53:40,729 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-21 18:53:40,738 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-21 18:53:41,092 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-21 18:53:41,713 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2022-11-21 18:53:42,020 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-21 18:53:42,086 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2022-11-21 18:53:42,118 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2022-11-21 18:53:42,122 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2022-11-21 18:53:42,141 INFO com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2022-11-21 18:53:42,142 INFO com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2022-11-21 18:53:42,142 INFO com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2022-11-21 18:53:42,142 INFO com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2022-11-21 18:53:42,143 INFO com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2022-11-21 18:53:42,144 INFO com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2022-11-21 18:53:42,144 INFO com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2022-11-21 18:53:42,320 INFO com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2022-11-21 18:53:42,323 INFO com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2022-11-21 18:53:42,326 INFO com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-21 18:53:42,331 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1669037022331 with initial instances count: 3
+2022-11-21 18:53:42,333 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application WATERMARK-SERVICE with eureka with status UP
+2022-11-21 18:53:42,334 INFO com.netflix.discovery.DiscoveryClient$3 [main] Saw local status change event StatusChangeEvent [timestamp=1669037022334, current=UP, previous=STARTING]
+2022-11-21 18:53:42,337 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083: registering service...
+2022-11-21 18:53:42,338 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8083"]
+2022-11-21 18:53:42,367 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8083 (http) with context path ''
+2022-11-21 18:53:42,369 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [main] Updating port to 8083
+2022-11-21 18:53:42,379 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - registration status: 204
+2022-11-21 18:53:42,488 INFO org.springframework.boot.StartupInfoLogger [main] Started WatermarkApplication in 9.304 seconds (JVM running for 10.094)
+2022-11-21 18:54:28,114 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8083-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-21 18:54:28,116 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8083-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-11-21 18:54:28,119 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8083-exec-1] Completed initialization in 3 ms
+2022-11-21 18:54:28,507 INFO com.watermark.controller.WaterMarkController [http-nio-8083-exec-1] getting image in the image template
+2022-11-21 18:54:28,507 INFO com.watermark.service.WatermarkService [http-nio-8083-exec-1] Getting the path
+2022-11-21 18:54:28,508 INFO com.watermark.service.WatermarkService [http-nio-8083-exec-1] getting the exact location
+2022-11-21 18:54:28,805 INFO com.watermark.service.WatermarkService [http-nio-8083-exec-1] successfully done the pocess
+2022-11-21 18:54:28,812 INFO com.watermark.controller.WaterMarkController [http-nio-8083-exec-1] getting the image Template and message 
+2022-11-21 18:58:42,150 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 19:03:42,154 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 19:08:42,165 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 19:12:49,325 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(28)-127.0.0.1] Application shutdown requested.
+2022-11-21 19:12:49,327 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [RMI TCP Connection(28)-127.0.0.1] Unregistering application WATERMARK-SERVICE with eureka with status DOWN
+2022-11-21 19:12:49,328 INFO com.netflix.discovery.DiscoveryClient$3 [RMI TCP Connection(28)-127.0.0.1] Saw local status change event StatusChangeEvent [timestamp=1669038169328, current=DOWN, previous=UP]
+2022-11-21 19:12:49,329 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083: registering service...
+2022-11-21 19:12:49,344 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - registration status: 204
+2022-11-21 19:12:49,358 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(28)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:12:49,359 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(28)-127.0.0.1] Stopping service [Tomcat]
+2022-11-21 19:12:49,364 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(28)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-21 19:12:49,370 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(28)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:12:49,374 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(28)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:12:49,380 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(28)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-21 19:12:49,382 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(28)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-11-21 19:12:49,394 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(28)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-11-21 19:12:49,395 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(28)-127.0.0.1] Shutting down DiscoveryClient ...
+2022-11-21 19:12:52,400 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(28)-127.0.0.1] Unregistering ...
+2022-11-21 19:12:52,410 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(28)-127.0.0.1] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - deregister  status: 200
+2022-11-21 19:12:52,426 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(28)-127.0.0.1] Completed shut down of DiscoveryClient
+2022-11-21 19:12:58,808 INFO org.springframework.boot.StartupInfoLogger [main] Starting WatermarkApplication using Java 17.0.4.1 on Rinish with PID 20408 (C:\Users\MohammedRinishA\git\Watermark-Project\watermark-api\target\classes started by MohammedRinishA in C:\Users\MohammedRinishA\git\Watermark-Project\watermark-api)
+2022-11-21 19:12:58,812 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.13, Spring v5.3.23
+2022-11-21 19:12:58,813 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-11-21 19:12:58,876 INFO org.springframework.boot.logging.DeferredLog [main] Fetching config from server at : http://localhost:8888
+2022-11-21 19:12:58,877 INFO org.springframework.boot.logging.DeferredLog [main] Located environment: name=WATERMARK-SERVICE, profiles=[default], label=null, version=fac0363ccad9f264927c7d092c0c7628ddb7ce50, state=null
+2022-11-21 19:12:59,476 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-21 19:12:59,659 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 172 ms. Found 1 JPA repository interfaces.
+2022-11-21 19:12:59,863 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=e40180e5-53f2-3a05-a605-93445059cbc9
+2022-11-21 19:13:00,215 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8083 (http)
+2022-11-21 19:13:00,223 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:13:00,223 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-11-21 19:13:00,223 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-21 19:13:00,377 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-11-21 19:13:00,378 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1498 ms
+2022-11-21 19:13:00,557 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-21 19:13:00,602 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-21 19:13:00,746 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-21 19:13:00,892 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-11-21 19:13:01,249 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-11-21 19:13:01,276 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-11-21 19:13:01,904 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-21 19:13:01,912 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-21 19:13:02,217 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-21 19:13:02,697 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2022-11-21 19:13:02,884 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-21 19:13:02,935 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2022-11-21 19:13:02,970 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2022-11-21 19:13:02,975 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2022-11-21 19:13:02,997 INFO com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2022-11-21 19:13:02,997 INFO com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2022-11-21 19:13:02,997 INFO com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2022-11-21 19:13:02,997 INFO com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2022-11-21 19:13:02,997 INFO com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2022-11-21 19:13:02,998 INFO com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2022-11-21 19:13:02,998 INFO com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2022-11-21 19:13:03,203 INFO com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2022-11-21 19:13:03,206 INFO com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2022-11-21 19:13:03,209 INFO com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-21 19:13:03,215 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1669038183214 with initial instances count: 2
+2022-11-21 19:13:03,216 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application WATERMARK-SERVICE with eureka with status UP
+2022-11-21 19:13:03,217 INFO com.netflix.discovery.DiscoveryClient$3 [main] Saw local status change event StatusChangeEvent [timestamp=1669038183217, current=UP, previous=STARTING]
+2022-11-21 19:13:03,219 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083: registering service...
+2022-11-21 19:13:03,219 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:13:03,258 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8083 (http) with context path ''
+2022-11-21 19:13:03,259 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [main] Updating port to 8083
+2022-11-21 19:13:03,273 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - registration status: 204
+2022-11-21 19:13:03,381 INFO org.springframework.boot.StartupInfoLogger [main] Started WatermarkApplication in 8.85 seconds (JVM running for 9.648)
+2022-11-21 19:13:22,632 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8083-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-21 19:13:22,633 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8083-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-11-21 19:13:22,634 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8083-exec-1] Completed initialization in 1 ms
+2022-11-21 19:13:26,352 INFO com.watermark.controller.WaterMarkController [http-nio-8083-exec-2] getting image in the image template
+2022-11-21 19:13:26,354 INFO com.watermark.service.WatermarkService [http-nio-8083-exec-2] Getting the path
+2022-11-21 19:13:26,355 INFO com.watermark.service.WatermarkService [http-nio-8083-exec-2] getting the exact location
+2022-11-21 19:13:26,597 INFO com.watermark.service.WatermarkService [http-nio-8083-exec-2] successfully done the pocess
+2022-11-21 19:13:26,603 INFO com.watermark.controller.WaterMarkController [http-nio-8083-exec-2] getting the image Template and message 
+2022-11-21 19:18:03,001 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 19:19:20,802 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(16)-127.0.0.1] Application shutdown requested.
+2022-11-21 19:19:20,805 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [RMI TCP Connection(16)-127.0.0.1] Unregistering application WATERMARK-SERVICE with eureka with status DOWN
+2022-11-21 19:19:20,806 INFO com.netflix.discovery.DiscoveryClient$3 [RMI TCP Connection(16)-127.0.0.1] Saw local status change event StatusChangeEvent [timestamp=1669038560806, current=DOWN, previous=UP]
+2022-11-21 19:19:20,807 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083: registering service...
+2022-11-21 19:19:20,818 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - registration status: 204
+2022-11-21 19:19:20,844 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(16)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:19:20,845 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(16)-127.0.0.1] Stopping service [Tomcat]
+2022-11-21 19:19:20,847 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(16)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-21 19:19:20,853 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(16)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:19:20,856 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(16)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:19:20,860 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(16)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-21 19:19:20,862 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(16)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-11-21 19:19:20,868 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(16)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-11-21 19:19:20,869 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(16)-127.0.0.1] Shutting down DiscoveryClient ...
+2022-11-21 19:19:23,876 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(16)-127.0.0.1] Unregistering ...
+2022-11-21 19:19:23,885 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(16)-127.0.0.1] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - deregister  status: 200
+2022-11-21 19:19:23,893 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(16)-127.0.0.1] Completed shut down of DiscoveryClient
+2022-11-21 19:19:30,133 INFO org.springframework.boot.StartupInfoLogger [main] Starting WatermarkApplication using Java 17.0.4.1 on Rinish with PID 17680 (C:\Users\MohammedRinishA\git\Watermark-Project\watermark-api\target\classes started by MohammedRinishA in C:\Users\MohammedRinishA\git\Watermark-Project\watermark-api)
+2022-11-21 19:19:30,136 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.13, Spring v5.3.23
+2022-11-21 19:19:30,137 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-11-21 19:19:30,189 INFO org.springframework.boot.logging.DeferredLog [main] Fetching config from server at : http://localhost:8888
+2022-11-21 19:19:30,189 INFO org.springframework.boot.logging.DeferredLog [main] Located environment: name=WATERMARK-SERVICE, profiles=[default], label=null, version=2938a7e910224763867fcc6bb00b4d8e0d10aaa1, state=null
+2022-11-21 19:19:30,762 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-21 19:19:30,927 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 156 ms. Found 1 JPA repository interfaces.
+2022-11-21 19:19:31,134 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=e40180e5-53f2-3a05-a605-93445059cbc9
+2022-11-21 19:19:31,467 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8083 (http)
+2022-11-21 19:19:31,475 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:19:31,475 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-11-21 19:19:31,475 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-21 19:19:31,637 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-11-21 19:19:31,637 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1446 ms
+2022-11-21 19:19:31,805 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-21 19:19:31,847 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-21 19:19:32,044 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-21 19:19:32,138 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-11-21 19:19:32,566 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-11-21 19:19:32,587 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-11-21 19:19:33,223 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-21 19:19:33,233 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-21 19:19:33,606 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-21 19:19:34,174 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2022-11-21 19:19:34,489 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-21 19:19:34,586 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2022-11-21 19:19:34,618 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2022-11-21 19:19:34,623 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2022-11-21 19:19:34,642 INFO com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2022-11-21 19:19:34,642 INFO com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2022-11-21 19:19:34,642 INFO com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2022-11-21 19:19:34,642 INFO com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2022-11-21 19:19:34,642 INFO com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2022-11-21 19:19:34,643 INFO com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2022-11-21 19:19:34,644 INFO com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2022-11-21 19:19:34,818 INFO com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2022-11-21 19:19:34,821 INFO com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2022-11-21 19:19:34,823 INFO com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-21 19:19:34,828 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1669038574827 with initial instances count: 2
+2022-11-21 19:19:34,830 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application WATERMARK-SERVICE with eureka with status UP
+2022-11-21 19:19:34,831 INFO com.netflix.discovery.DiscoveryClient$3 [main] Saw local status change event StatusChangeEvent [timestamp=1669038574831, current=UP, previous=STARTING]
+2022-11-21 19:19:34,832 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083: registering service...
+2022-11-21 19:19:34,833 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:19:34,871 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8083 (http) with context path ''
+2022-11-21 19:19:34,872 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [main] Updating port to 8083
+2022-11-21 19:19:34,881 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - registration status: 204
+2022-11-21 19:19:34,983 INFO org.springframework.boot.StartupInfoLogger [main] Started WatermarkApplication in 9.048 seconds (JVM running for 9.839)
+2022-11-21 19:19:41,783 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8083-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-21 19:19:41,783 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8083-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-11-21 19:19:41,784 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8083-exec-1] Completed initialization in 1 ms
+2022-11-21 19:19:41,936 INFO com.watermark.controller.WaterMarkController [http-nio-8083-exec-1] getting image in the image template
+2022-11-21 19:19:41,937 INFO com.watermark.service.WatermarkService [http-nio-8083-exec-1] Getting the path
+2022-11-21 19:19:41,937 INFO com.watermark.service.WatermarkService [http-nio-8083-exec-1] getting the exact location
+2022-11-21 19:19:42,144 INFO com.watermark.service.WatermarkService [http-nio-8083-exec-1] successfully done the pocess
+2022-11-21 19:19:42,148 INFO com.watermark.controller.WaterMarkController [http-nio-8083-exec-1] getting the image Template and message 
+2022-11-21 19:20:47,371 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(10)-127.0.0.1] Application shutdown requested.
+2022-11-21 19:20:47,373 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [RMI TCP Connection(10)-127.0.0.1] Unregistering application WATERMARK-SERVICE with eureka with status DOWN
+2022-11-21 19:20:47,373 INFO com.netflix.discovery.DiscoveryClient$3 [RMI TCP Connection(10)-127.0.0.1] Saw local status change event StatusChangeEvent [timestamp=1669038647373, current=DOWN, previous=UP]
+2022-11-21 19:20:47,373 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083: registering service...
+2022-11-21 19:20:47,378 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - registration status: 204
+2022-11-21 19:20:47,386 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:20:47,387 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Stopping service [Tomcat]
+2022-11-21 19:20:47,388 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-21 19:20:47,392 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:20:47,394 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:20:47,397 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(10)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-21 19:20:47,400 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(10)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-11-21 19:20:47,406 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(10)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-11-21 19:20:47,407 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(10)-127.0.0.1] Shutting down DiscoveryClient ...
+2022-11-21 19:20:50,424 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(10)-127.0.0.1] Unregistering ...
+2022-11-21 19:20:50,431 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(10)-127.0.0.1] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - deregister  status: 200
+2022-11-21 19:20:50,436 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(10)-127.0.0.1] Completed shut down of DiscoveryClient
+2022-11-21 19:20:56,861 INFO org.springframework.boot.StartupInfoLogger [main] Starting WatermarkApplication using Java 17.0.4.1 on Rinish with PID 4236 (C:\Users\MohammedRinishA\git\Watermark-Project\watermark-api\target\classes started by MohammedRinishA in C:\Users\MohammedRinishA\git\Watermark-Project\watermark-api)
+2022-11-21 19:20:56,863 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.13, Spring v5.3.23
+2022-11-21 19:20:56,865 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-11-21 19:20:56,904 INFO org.springframework.boot.logging.DeferredLog [main] Fetching config from server at : http://localhost:8888
+2022-11-21 19:20:56,904 INFO org.springframework.boot.logging.DeferredLog [main] Located environment: name=WATERMARK-SERVICE, profiles=[default], label=null, version=2938a7e910224763867fcc6bb00b4d8e0d10aaa1, state=null
+2022-11-21 19:20:57,538 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-21 19:20:57,693 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 133 ms. Found 1 JPA repository interfaces.
+2022-11-21 19:20:58,019 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=e40180e5-53f2-3a05-a605-93445059cbc9
+2022-11-21 19:20:58,430 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8083 (http)
+2022-11-21 19:20:58,438 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:20:58,438 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-11-21 19:20:58,438 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-21 19:20:58,621 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-11-21 19:20:58,622 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1716 ms
+2022-11-21 19:20:58,796 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-21 19:20:58,844 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-21 19:20:58,985 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-21 19:20:59,084 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-11-21 19:20:59,407 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-11-21 19:20:59,421 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-11-21 19:20:59,974 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-21 19:20:59,982 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-21 19:21:00,276 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-21 19:21:00,733 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2022-11-21 19:21:00,951 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-21 19:21:01,019 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2022-11-21 19:21:01,057 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2022-11-21 19:21:01,062 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2022-11-21 19:21:01,085 INFO com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2022-11-21 19:21:01,086 INFO com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2022-11-21 19:21:01,086 INFO com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2022-11-21 19:21:01,086 INFO com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2022-11-21 19:21:01,086 INFO com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2022-11-21 19:21:01,087 INFO com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2022-11-21 19:21:01,087 INFO com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2022-11-21 19:21:01,283 INFO com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2022-11-21 19:21:01,285 INFO com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2022-11-21 19:21:01,288 INFO com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-21 19:21:01,292 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1669038661291 with initial instances count: 2
+2022-11-21 19:21:01,293 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application WATERMARK-SERVICE with eureka with status UP
+2022-11-21 19:21:01,294 INFO com.netflix.discovery.DiscoveryClient$3 [main] Saw local status change event StatusChangeEvent [timestamp=1669038661294, current=UP, previous=STARTING]
+2022-11-21 19:21:01,296 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083: registering service...
+2022-11-21 19:21:01,297 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:21:01,330 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8083 (http) with context path ''
+2022-11-21 19:21:01,330 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [main] Updating port to 8083
+2022-11-21 19:21:01,340 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - registration status: 204
+2022-11-21 19:21:01,448 INFO org.springframework.boot.StartupInfoLogger [main] Started WatermarkApplication in 8.998 seconds (JVM running for 9.779)
+2022-11-21 19:21:05,087 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8083-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-21 19:21:05,088 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8083-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-11-21 19:21:05,090 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8083-exec-1] Completed initialization in 2 ms
+2022-11-21 19:21:46,988 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(10)-127.0.0.1] Application shutdown requested.
+2022-11-21 19:21:46,990 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [RMI TCP Connection(10)-127.0.0.1] Unregistering application WATERMARK-SERVICE with eureka with status DOWN
+2022-11-21 19:21:46,990 INFO com.netflix.discovery.DiscoveryClient$3 [RMI TCP Connection(10)-127.0.0.1] Saw local status change event StatusChangeEvent [timestamp=1669038706990, current=DOWN, previous=UP]
+2022-11-21 19:21:46,991 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083: registering service...
+2022-11-21 19:21:46,995 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - registration status: 204
+2022-11-21 19:21:47,018 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:21:47,019 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Stopping service [Tomcat]
+2022-11-21 19:21:47,020 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-21 19:21:47,023 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:21:47,025 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:21:47,028 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(10)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-21 19:21:47,029 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(10)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-11-21 19:21:47,035 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(10)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-11-21 19:21:47,036 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(10)-127.0.0.1] Shutting down DiscoveryClient ...
+2022-11-21 19:21:50,041 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(10)-127.0.0.1] Unregistering ...
+2022-11-21 19:21:50,053 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(10)-127.0.0.1] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - deregister  status: 200
+2022-11-21 19:21:50,071 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(10)-127.0.0.1] Completed shut down of DiscoveryClient
+2022-11-21 19:21:56,742 INFO org.springframework.boot.StartupInfoLogger [main] Starting WatermarkApplication using Java 17.0.4.1 on Rinish with PID 17052 (C:\Users\MohammedRinishA\git\Watermark-Project\watermark-api\target\classes started by MohammedRinishA in C:\Users\MohammedRinishA\git\Watermark-Project\watermark-api)
+2022-11-21 19:21:56,746 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.13, Spring v5.3.23
+2022-11-21 19:21:56,746 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-11-21 19:21:56,786 INFO org.springframework.boot.logging.DeferredLog [main] Fetching config from server at : http://localhost:8888
+2022-11-21 19:21:56,786 INFO org.springframework.boot.logging.DeferredLog [main] Located environment: name=WATERMARK-SERVICE, profiles=[default], label=null, version=2938a7e910224763867fcc6bb00b4d8e0d10aaa1, state=null
+2022-11-21 19:21:57,342 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-21 19:21:57,486 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 137 ms. Found 1 JPA repository interfaces.
+2022-11-21 19:21:57,743 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=e40180e5-53f2-3a05-a605-93445059cbc9
+2022-11-21 19:21:58,234 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8083 (http)
+2022-11-21 19:21:58,241 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:21:58,241 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-11-21 19:21:58,242 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-21 19:21:58,395 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-11-21 19:21:58,396 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1608 ms
+2022-11-21 19:21:58,637 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-21 19:21:58,680 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-21 19:21:58,816 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-21 19:21:58,915 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-11-21 19:21:59,301 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-11-21 19:21:59,319 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-11-21 19:21:59,907 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-21 19:21:59,914 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-21 19:22:00,207 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-21 19:22:00,801 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2022-11-21 19:22:01,119 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-21 19:22:01,174 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2022-11-21 19:22:01,209 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2022-11-21 19:22:01,213 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2022-11-21 19:22:01,234 INFO com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2022-11-21 19:22:01,234 INFO com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2022-11-21 19:22:01,235 INFO com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2022-11-21 19:22:01,235 INFO com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2022-11-21 19:22:01,235 INFO com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2022-11-21 19:22:01,235 INFO com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2022-11-21 19:22:01,235 INFO com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2022-11-21 19:22:01,402 INFO com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2022-11-21 19:22:01,405 INFO com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2022-11-21 19:22:01,407 INFO com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-21 19:22:01,412 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1669038721411 with initial instances count: 2
+2022-11-21 19:22:01,413 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application WATERMARK-SERVICE with eureka with status UP
+2022-11-21 19:22:01,414 INFO com.netflix.discovery.DiscoveryClient$3 [main] Saw local status change event StatusChangeEvent [timestamp=1669038721414, current=UP, previous=STARTING]
+2022-11-21 19:22:01,416 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083: registering service...
+2022-11-21 19:22:01,416 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:22:01,479 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8083 (http) with context path ''
+2022-11-21 19:22:01,480 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [main] Updating port to 8083
+2022-11-21 19:22:01,487 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - registration status: 204
+2022-11-21 19:22:01,594 INFO org.springframework.boot.StartupInfoLogger [main] Started WatermarkApplication in 9.255 seconds (JVM running for 10.036)
+2022-11-21 19:22:07,520 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8083-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-21 19:22:07,520 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8083-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-11-21 19:22:07,521 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8083-exec-1] Completed initialization in 1 ms
+2022-11-21 19:22:07,668 INFO com.watermark.controller.WaterMarkController [http-nio-8083-exec-1] getting image in the image template
+2022-11-21 19:22:07,668 INFO com.watermark.service.WatermarkService [http-nio-8083-exec-1] Getting the path
+2022-11-21 19:22:07,668 INFO com.watermark.service.WatermarkService [http-nio-8083-exec-1] getting the exact location
+2022-11-21 19:22:07,883 INFO com.watermark.service.WatermarkService [http-nio-8083-exec-1] successfully done the pocess
+2022-11-21 19:22:07,888 INFO com.watermark.controller.WaterMarkController [http-nio-8083-exec-1] getting the image Template and message 
+2022-11-21 19:22:55,661 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(10)-127.0.0.1] Application shutdown requested.
+2022-11-21 19:22:55,662 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [RMI TCP Connection(10)-127.0.0.1] Unregistering application WATERMARK-SERVICE with eureka with status DOWN
+2022-11-21 19:22:55,662 INFO com.netflix.discovery.DiscoveryClient$3 [RMI TCP Connection(10)-127.0.0.1] Saw local status change event StatusChangeEvent [timestamp=1669038775662, current=DOWN, previous=UP]
+2022-11-21 19:22:55,662 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083: registering service...
+2022-11-21 19:22:55,667 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - registration status: 204
+2022-11-21 19:22:55,676 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:22:55,676 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Stopping service [Tomcat]
+2022-11-21 19:22:55,678 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-21 19:22:55,681 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:22:55,683 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:22:55,687 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(10)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-21 19:22:55,688 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(10)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-11-21 19:22:55,695 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(10)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-11-21 19:22:55,695 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(10)-127.0.0.1] Shutting down DiscoveryClient ...
+2022-11-21 19:22:58,711 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(10)-127.0.0.1] Unregistering ...
+2022-11-21 19:22:58,718 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(10)-127.0.0.1] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - deregister  status: 200
+2022-11-21 19:22:58,728 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(10)-127.0.0.1] Completed shut down of DiscoveryClient
+2022-11-21 19:23:02,929 INFO org.springframework.boot.StartupInfoLogger [main] Starting WatermarkApplication using Java 17.0.4.1 on Rinish with PID 17816 (C:\Users\MohammedRinishA\git\Watermark-Project\watermark-api\target\classes started by MohammedRinishA in C:\Users\MohammedRinishA\git\Watermark-Project\watermark-api)
+2022-11-21 19:23:02,932 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.13, Spring v5.3.23
+2022-11-21 19:23:02,933 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-11-21 19:23:02,976 INFO org.springframework.boot.logging.DeferredLog [main] Fetching config from server at : http://localhost:8888
+2022-11-21 19:23:02,976 INFO org.springframework.boot.logging.DeferredLog [main] Located environment: name=WATERMARK-SERVICE, profiles=[default], label=null, version=2938a7e910224763867fcc6bb00b4d8e0d10aaa1, state=null
+2022-11-21 19:23:03,563 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-21 19:23:03,703 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 131 ms. Found 1 JPA repository interfaces.
+2022-11-21 19:23:03,961 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=e40180e5-53f2-3a05-a605-93445059cbc9
+2022-11-21 19:23:04,371 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8083 (http)
+2022-11-21 19:23:04,379 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:23:04,380 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-11-21 19:23:04,380 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-21 19:23:04,549 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-11-21 19:23:04,550 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1571 ms
+2022-11-21 19:23:04,712 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-21 19:23:04,763 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-21 19:23:04,903 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-21 19:23:04,990 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-11-21 19:23:05,288 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-11-21 19:23:05,301 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-11-21 19:23:05,888 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-21 19:23:05,898 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-21 19:23:06,193 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-21 19:23:06,644 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2022-11-21 19:23:06,970 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-21 19:23:07,042 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2022-11-21 19:23:07,078 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2022-11-21 19:23:07,082 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2022-11-21 19:23:07,103 INFO com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2022-11-21 19:23:07,103 INFO com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2022-11-21 19:23:07,103 INFO com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2022-11-21 19:23:07,103 INFO com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2022-11-21 19:23:07,103 INFO com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2022-11-21 19:23:07,103 INFO com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2022-11-21 19:23:07,104 INFO com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2022-11-21 19:23:07,319 INFO com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2022-11-21 19:23:07,322 INFO com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2022-11-21 19:23:07,326 INFO com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-21 19:23:07,331 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1669038787331 with initial instances count: 2
+2022-11-21 19:23:07,333 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application WATERMARK-SERVICE with eureka with status UP
+2022-11-21 19:23:07,334 INFO com.netflix.discovery.DiscoveryClient$3 [main] Saw local status change event StatusChangeEvent [timestamp=1669038787334, current=UP, previous=STARTING]
+2022-11-21 19:23:07,337 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083: registering service...
+2022-11-21 19:23:07,337 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:23:07,375 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8083 (http) with context path ''
+2022-11-21 19:23:07,375 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [main] Updating port to 8083
+2022-11-21 19:23:07,379 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - registration status: 204
+2022-11-21 19:23:07,543 INFO org.springframework.boot.StartupInfoLogger [main] Started WatermarkApplication in 6.559 seconds (JVM running for 7.325)
+2022-11-21 19:23:24,584 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(6)-127.0.0.1] Application shutdown requested.
+2022-11-21 19:23:24,585 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [RMI TCP Connection(6)-127.0.0.1] Unregistering application WATERMARK-SERVICE with eureka with status DOWN
+2022-11-21 19:23:24,586 INFO com.netflix.discovery.DiscoveryClient$3 [RMI TCP Connection(6)-127.0.0.1] Saw local status change event StatusChangeEvent [timestamp=1669038804586, current=DOWN, previous=UP]
+2022-11-21 19:23:24,586 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083: registering service...
+2022-11-21 19:23:24,590 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - registration status: 204
+2022-11-21 19:23:24,599 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(6)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:23:24,600 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(6)-127.0.0.1] Stopping service [Tomcat]
+2022-11-21 19:23:24,603 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(6)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:23:24,606 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(6)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:23:24,609 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(6)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-21 19:23:24,611 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(6)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-11-21 19:23:24,617 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(6)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-11-21 19:23:24,618 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(6)-127.0.0.1] Shutting down DiscoveryClient ...
+2022-11-21 19:23:27,631 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(6)-127.0.0.1] Unregistering ...
+2022-11-21 19:23:27,645 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(6)-127.0.0.1] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - deregister  status: 200
+2022-11-21 19:23:27,659 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(6)-127.0.0.1] Completed shut down of DiscoveryClient
+2022-11-21 19:23:34,283 INFO org.springframework.boot.StartupInfoLogger [main] Starting WatermarkApplication using Java 17.0.4.1 on Rinish with PID 19888 (C:\Users\MohammedRinishA\git\Watermark-Project\watermark-api\target\classes started by MohammedRinishA in C:\Users\MohammedRinishA\git\Watermark-Project\watermark-api)
+2022-11-21 19:23:34,286 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.13, Spring v5.3.23
+2022-11-21 19:23:34,286 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-11-21 19:23:34,325 INFO org.springframework.boot.logging.DeferredLog [main] Fetching config from server at : http://localhost:8888
+2022-11-21 19:23:34,326 INFO org.springframework.boot.logging.DeferredLog [main] Located environment: name=WATERMARK-SERVICE, profiles=[default], label=null, version=2938a7e910224763867fcc6bb00b4d8e0d10aaa1, state=null
+2022-11-21 19:23:34,878 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-21 19:23:35,064 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 175 ms. Found 1 JPA repository interfaces.
+2022-11-21 19:23:35,302 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=e40180e5-53f2-3a05-a605-93445059cbc9
+2022-11-21 19:23:35,669 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8083 (http)
+2022-11-21 19:23:35,678 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:23:35,679 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-11-21 19:23:35,679 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-21 19:23:35,883 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-11-21 19:23:35,883 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1555 ms
+2022-11-21 19:23:36,153 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-21 19:23:36,197 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-21 19:23:36,335 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-21 19:23:36,428 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-11-21 19:23:36,719 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-11-21 19:23:36,733 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-11-21 19:23:37,341 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-21 19:23:37,349 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-21 19:23:37,628 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-21 19:23:38,207 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2022-11-21 19:23:38,708 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-21 19:23:38,803 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2022-11-21 19:23:38,837 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2022-11-21 19:23:38,842 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2022-11-21 19:23:38,862 INFO com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2022-11-21 19:23:38,862 INFO com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2022-11-21 19:23:38,863 INFO com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2022-11-21 19:23:38,863 INFO com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2022-11-21 19:23:38,863 INFO com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2022-11-21 19:23:38,863 INFO com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2022-11-21 19:23:38,864 INFO com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2022-11-21 19:23:39,059 INFO com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2022-11-21 19:23:39,062 INFO com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2022-11-21 19:23:39,065 INFO com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-21 19:23:39,071 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1669038819070 with initial instances count: 2
+2022-11-21 19:23:39,073 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application WATERMARK-SERVICE with eureka with status UP
+2022-11-21 19:23:39,074 INFO com.netflix.discovery.DiscoveryClient$3 [main] Saw local status change event StatusChangeEvent [timestamp=1669038819074, current=UP, previous=STARTING]
+2022-11-21 19:23:39,075 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083: registering service...
+2022-11-21 19:23:39,076 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:23:39,112 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8083 (http) with context path ''
+2022-11-21 19:23:39,112 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [main] Updating port to 8083
+2022-11-21 19:23:39,121 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - registration status: 204
+2022-11-21 19:23:39,223 INFO org.springframework.boot.StartupInfoLogger [main] Started WatermarkApplication in 9.312 seconds (JVM running for 10.266)
+2022-11-21 19:25:05,364 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(10)-127.0.0.1] Application shutdown requested.
+2022-11-21 19:25:05,365 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [RMI TCP Connection(10)-127.0.0.1] Unregistering application WATERMARK-SERVICE with eureka with status DOWN
+2022-11-21 19:25:05,366 INFO com.netflix.discovery.DiscoveryClient$3 [RMI TCP Connection(10)-127.0.0.1] Saw local status change event StatusChangeEvent [timestamp=1669038905366, current=DOWN, previous=UP]
+2022-11-21 19:25:05,366 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083: registering service...
+2022-11-21 19:25:05,371 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - registration status: 204
+2022-11-21 19:25:05,381 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:25:05,382 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Stopping service [Tomcat]
+2022-11-21 19:25:05,386 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:25:05,389 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(10)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:25:05,393 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(10)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-21 19:25:05,394 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(10)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-11-21 19:25:05,402 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(10)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-11-21 19:25:05,403 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(10)-127.0.0.1] Shutting down DiscoveryClient ...
+2022-11-21 19:25:08,405 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(10)-127.0.0.1] Unregistering ...
+2022-11-21 19:25:08,412 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(10)-127.0.0.1] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - deregister  status: 200
+2022-11-21 19:25:08,418 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(10)-127.0.0.1] Completed shut down of DiscoveryClient
+2022-11-21 19:25:14,966 INFO org.springframework.boot.StartupInfoLogger [main] Starting WatermarkApplication using Java 17.0.4.1 on Rinish with PID 11796 (C:\Users\MohammedRinishA\git\Watermark-Project\watermark-api\target\classes started by MohammedRinishA in C:\Users\MohammedRinishA\git\Watermark-Project\watermark-api)
+2022-11-21 19:25:14,971 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.13, Spring v5.3.23
+2022-11-21 19:25:14,971 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-11-21 19:25:15,019 INFO org.springframework.boot.logging.DeferredLog [main] Fetching config from server at : http://localhost:8888
+2022-11-21 19:25:15,020 INFO org.springframework.boot.logging.DeferredLog [main] Located environment: name=WATERMARK-SERVICE, profiles=[default], label=null, version=2938a7e910224763867fcc6bb00b4d8e0d10aaa1, state=null
+2022-11-21 19:25:15,600 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-21 19:25:15,752 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 143 ms. Found 1 JPA repository interfaces.
+2022-11-21 19:25:15,995 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=e40180e5-53f2-3a05-a605-93445059cbc9
+2022-11-21 19:25:16,357 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8083 (http)
+2022-11-21 19:25:16,365 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:25:16,365 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-11-21 19:25:16,365 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-21 19:25:16,586 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-11-21 19:25:16,587 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1565 ms
+2022-11-21 19:25:16,790 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-21 19:25:16,834 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-21 19:25:16,976 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-21 19:25:17,079 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-11-21 19:25:17,407 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-11-21 19:25:17,431 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-11-21 19:25:18,015 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-21 19:25:18,022 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-21 19:25:18,299 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-21 19:25:18,801 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2022-11-21 19:25:19,086 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-21 19:25:19,174 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2022-11-21 19:25:19,209 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2022-11-21 19:25:19,213 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2022-11-21 19:25:19,234 INFO com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2022-11-21 19:25:19,234 INFO com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2022-11-21 19:25:19,235 INFO com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2022-11-21 19:25:19,235 INFO com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2022-11-21 19:25:19,235 INFO com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2022-11-21 19:25:19,235 INFO com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2022-11-21 19:25:19,235 INFO com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2022-11-21 19:25:19,421 INFO com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2022-11-21 19:25:19,424 INFO com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2022-11-21 19:25:19,427 INFO com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-21 19:25:19,434 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1669038919433 with initial instances count: 3
+2022-11-21 19:25:19,436 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application WATERMARK-SERVICE with eureka with status UP
+2022-11-21 19:25:19,437 INFO com.netflix.discovery.DiscoveryClient$3 [main] Saw local status change event StatusChangeEvent [timestamp=1669038919437, current=UP, previous=STARTING]
+2022-11-21 19:25:19,439 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083: registering service...
+2022-11-21 19:25:19,440 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:25:19,471 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8083 (http) with context path ''
+2022-11-21 19:25:19,473 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [main] Updating port to 8083
+2022-11-21 19:25:19,490 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - registration status: 204
+2022-11-21 19:25:19,613 INFO org.springframework.boot.StartupInfoLogger [main] Started WatermarkApplication in 9.127 seconds (JVM running for 9.904)
+2022-11-21 19:25:24,471 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8083-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-21 19:25:24,472 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8083-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-11-21 19:25:24,473 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8083-exec-1] Completed initialization in 1 ms
+2022-11-21 19:25:24,642 INFO com.watermark.controller.WaterMarkController [http-nio-8083-exec-1] getting image in the image template
+2022-11-21 19:25:24,642 INFO com.watermark.service.WatermarkService [http-nio-8083-exec-1] Getting the path
+2022-11-21 19:25:24,642 INFO com.watermark.service.WatermarkService [http-nio-8083-exec-1] getting the exact location
+2022-11-21 19:25:24,841 INFO com.watermark.service.WatermarkService [http-nio-8083-exec-1] successfully done the pocess
+2022-11-21 19:25:24,845 INFO com.watermark.controller.WaterMarkController [http-nio-8083-exec-1] getting the image Template and message 
+2022-11-21 19:30:19,250 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 19:35:19,268 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 19:40:19,278 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 19:40:30,785 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(22)-127.0.0.1] Application shutdown requested.
+2022-11-21 19:40:30,787 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [RMI TCP Connection(22)-127.0.0.1] Unregistering application WATERMARK-SERVICE with eureka with status DOWN
+2022-11-21 19:40:30,788 INFO com.netflix.discovery.DiscoveryClient$3 [RMI TCP Connection(22)-127.0.0.1] Saw local status change event StatusChangeEvent [timestamp=1669039830788, current=DOWN, previous=UP]
+2022-11-21 19:40:30,788 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083: registering service...
+2022-11-21 19:40:30,799 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - registration status: 204
+2022-11-21 19:40:30,809 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(22)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:40:30,810 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(22)-127.0.0.1] Stopping service [Tomcat]
+2022-11-21 19:40:30,812 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(22)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-21 19:40:30,816 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(22)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:40:30,819 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(22)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:40:30,823 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(22)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-21 19:40:30,824 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(22)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-11-21 19:40:30,831 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(22)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-11-21 19:40:30,832 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(22)-127.0.0.1] Shutting down DiscoveryClient ...
+2022-11-21 19:40:33,840 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(22)-127.0.0.1] Unregistering ...
+2022-11-21 19:40:33,846 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(22)-127.0.0.1] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - deregister  status: 200
+2022-11-21 19:40:33,850 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(22)-127.0.0.1] Completed shut down of DiscoveryClient
+2022-11-21 19:40:38,039 INFO org.springframework.boot.StartupInfoLogger [main] Starting WatermarkApplication using Java 17.0.4.1 on Rinish with PID 4432 (C:\Users\MohammedRinishA\git\Watermark-Project\watermark-api\target\classes started by MohammedRinishA in C:\Users\MohammedRinishA\git\Watermark-Project\watermark-api)
+2022-11-21 19:40:38,042 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.13, Spring v5.3.23
+2022-11-21 19:40:38,043 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-11-21 19:40:38,083 INFO org.springframework.boot.logging.DeferredLog [main] Fetching config from server at : http://localhost:8888
+2022-11-21 19:40:38,083 INFO org.springframework.boot.logging.DeferredLog [main] Located environment: name=WATERMARK-SERVICE, profiles=[default], label=null, version=2938a7e910224763867fcc6bb00b4d8e0d10aaa1, state=null
+2022-11-21 19:40:38,673 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-21 19:40:38,887 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 200 ms. Found 1 JPA repository interfaces.
+2022-11-21 19:40:39,195 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=e40180e5-53f2-3a05-a605-93445059cbc9
+2022-11-21 19:40:39,567 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8083 (http)
+2022-11-21 19:40:39,575 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:40:39,576 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-11-21 19:40:39,576 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-21 19:40:39,725 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-11-21 19:40:39,726 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1641 ms
+2022-11-21 19:40:39,891 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-21 19:40:39,937 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-21 19:40:40,108 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-21 19:40:40,209 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-11-21 19:40:40,521 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-11-21 19:40:40,534 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-11-21 19:40:41,119 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-21 19:40:41,130 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-21 19:40:41,447 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-21 19:40:41,991 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses RestTemplate.
+2022-11-21 19:40:42,280 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-11-21 19:40:42,344 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2022-11-21 19:40:42,378 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2022-11-21 19:40:42,382 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2022-11-21 19:40:42,404 INFO com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2022-11-21 19:40:42,405 INFO com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2022-11-21 19:40:42,405 INFO com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2022-11-21 19:40:42,405 INFO com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2022-11-21 19:40:42,405 INFO com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2022-11-21 19:40:42,405 INFO com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2022-11-21 19:40:42,405 INFO com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2022-11-21 19:40:42,575 INFO com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2022-11-21 19:40:42,578 INFO com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2022-11-21 19:40:42,581 INFO com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-11-21 19:40:42,585 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1669039842584 with initial instances count: 3
+2022-11-21 19:40:42,587 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application WATERMARK-SERVICE with eureka with status UP
+2022-11-21 19:40:42,588 INFO com.netflix.discovery.DiscoveryClient$3 [main] Saw local status change event StatusChangeEvent [timestamp=1669039842588, current=UP, previous=STARTING]
+2022-11-21 19:40:42,589 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083: registering service...
+2022-11-21 19:40:42,590 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8083"]
+2022-11-21 19:40:42,636 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8083 (http) with context path ''
+2022-11-21 19:40:42,637 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [main] Updating port to 8083
+2022-11-21 19:40:42,640 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - registration status: 204
+2022-11-21 19:40:42,749 INFO org.springframework.boot.StartupInfoLogger [main] Started WatermarkApplication in 6.632 seconds (JVM running for 7.408)
+2022-11-21 19:45:42,418 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 19:50:42,427 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 19:55:42,430 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 20:56:08,566 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55m57s689ms479µs300ns).
+2022-11-21 20:56:10,094 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 21:01:10,103 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 21:06:10,114 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 21:11:10,118 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 21:16:10,127 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 21:21:10,134 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 21:26:10,146 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 21:31:10,150 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 21:36:10,161 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 21:41:10,178 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 21:46:12,319 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m33s54ms641µs200ns).
+2022-11-21 21:48:13,201 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 21:53:13,205 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 21:58:13,222 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 21:59:23,179 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8083-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-21 21:59:23,180 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8083-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-11-21 21:59:23,187 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8083-exec-1] Completed initialization in 6 ms
+2022-11-21 21:59:23,574 INFO com.watermark.controller.WaterMarkController [http-nio-8083-exec-1] getting image in the image template
+2022-11-21 21:59:23,575 INFO com.watermark.service.WatermarkService [http-nio-8083-exec-1] Getting the path
+2022-11-21 21:59:23,575 INFO com.watermark.service.WatermarkService [http-nio-8083-exec-1] getting the exact location
+2022-11-21 21:59:23,824 INFO com.watermark.service.WatermarkService [http-nio-8083-exec-1] successfully done the pocess
+2022-11-21 21:59:23,831 INFO com.watermark.controller.WaterMarkController [http-nio-8083-exec-1] getting the image Template and message 
+2022-11-21 22:03:13,227 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 22:43:25,684 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=40m13s163ms626µs100ns).
+2022-11-21 22:47:56,381 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 22:52:56,389 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 22:57:56,404 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 23:02:56,412 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2022-11-21 23:07:11,767 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(122)-127.0.0.1] Application shutdown requested.
+2022-11-21 23:07:11,769 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [RMI TCP Connection(122)-127.0.0.1] Unregistering application WATERMARK-SERVICE with eureka with status DOWN
+2022-11-21 23:07:11,770 INFO com.netflix.discovery.DiscoveryClient$3 [RMI TCP Connection(122)-127.0.0.1] Saw local status change event StatusChangeEvent [timestamp=1669052231770, current=DOWN, previous=UP]
+2022-11-21 23:07:11,770 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083: registering service...
+2022-11-21 23:07:11,782 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [DiscoveryClient-InstanceInfoReplicator-0] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on POST request for "http://localhost:8761/eureka/apps/WATERMARK-SERVICE": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/WATERMARK-SERVICE": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 21 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 34 more
+
+2022-11-21 23:07:11,782 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [DiscoveryClient-InstanceInfoReplicator-0] Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/WATERMARK-SERVICE": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-11-21 23:07:11,787 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(122)-127.0.0.1] Pausing ProtocolHandler ["http-nio-8083"]
+2022-11-21 23:07:11,787 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(122)-127.0.0.1] Stopping service [Tomcat]
+2022-11-21 23:07:11,788 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(122)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-21 23:07:11,789 INFO com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient [DiscoveryClient-InstanceInfoReplicator-0] Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/WATERMARK-SERVICE": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/WATERMARK-SERVICE": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 35 more
+
+2022-11-21 23:07:11,789 WARN com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient [DiscoveryClient-InstanceInfoReplicator-0] Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/WATERMARK-SERVICE": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2022-11-21 23:07:11,792 WARN com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_WATERMARK-SERVICE/Rinish:WATERMARK-SERVICE:8083 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-11-21 23:07:11,793 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(122)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8083"]
+2022-11-21 23:07:11,793 WARN com.netflix.discovery.InstanceInfoReplicator [DiscoveryClient-InstanceInfoReplicator-0] There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-11-21 23:07:11,795 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(122)-127.0.0.1] Destroying ProtocolHandler ["http-nio-8083"]
+2022-11-21 23:07:11,800 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [RMI TCP Connection(122)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-21 23:07:11,801 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(122)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-11-21 23:07:11,806 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(122)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-11-21 23:07:11,807 INFO com.netflix.discovery.DiscoveryClient [RMI TCP Connection(122)-127.0.0.1] Shutting down DiscoveryClient ...
