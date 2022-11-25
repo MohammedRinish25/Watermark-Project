@@ -47,12 +47,18 @@ public class WatermarkService implements IWatermarkService {
 	private String destinationPath ;
     
     
+   /**
+ * this variable stores the command
+ */
    @Value("${command}")
    private String command;
     
    
 
 	
+	/**
+	 *This method returns the list of images i.e the image templates present
+	 */
 	@Override
 	public List<ImageTemplate> getAll() {
 		logger.info("This returns the All the list which is present");
@@ -67,7 +73,7 @@ public class WatermarkService implements IWatermarkService {
 	 * @param imageTemplate is used where all details of the templates are being passed as an object
 	 * @param message is variable which stores the user message for water mark
 	 * @return water mark the image and returns the destination path
-	 * @throws IOException 
+	 * @throws IOException throws the IOException
 	 */
 	@Override
 	public ImageResponse magick(ImageTemplate imageTemplate, String message) throws IOException ,MessageNotFoundException{

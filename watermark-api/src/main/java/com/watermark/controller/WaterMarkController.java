@@ -40,6 +40,10 @@ import com.watermark.service.IWatermarkService;
  *
  */
 
+/**
+ * @author MohammedRinishA
+ *
+ */
 @RestController
 @RequestMapping("watermark-api")
 public class WaterMarkController {
@@ -93,6 +97,9 @@ public class WaterMarkController {
 	
 	
 	
+	/**
+	 * This variable has the destination path stored in it
+	 */
 	@Value("${path.values}")
 	public String destinationPath ;
 	 
